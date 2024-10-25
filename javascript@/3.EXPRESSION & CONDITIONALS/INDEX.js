@@ -1,6 +1,6 @@
 console.log("Hello I am conditional tuturiol")
 
-// let age = 1;
+let age = 1;
 // let grace = 2;
 
 // age += grace  //assignment operator 
@@ -14,7 +14,7 @@ console.log("Hello I am conditional tuturiol")
 
 // if((age+grace)>18){
 
-let age = 1;
+
 
 if(age==18){
     console.log(" You can drive ")
