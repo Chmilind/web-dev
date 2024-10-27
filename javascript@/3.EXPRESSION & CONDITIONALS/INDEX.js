@@ -12,10 +12,8 @@ let age = 1;
 // console.log(age**grace);  //arithmetic operator  
 // console.log(age%grace);  //arithmetic operator  
 
+
 // if((age+grace)>18){
-
-
-
 if (age == 18) {
     console.log(" You can drive ")
 }
