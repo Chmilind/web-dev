@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name generator</title>
+</head>
+
+<body>
+    <!-- Create a bussiness name generator by combining list of adjectives and shop name and another name 
+
+Adjectives:
+crazy
+amazing
+fire
+
+shop name:
+Engine
+foods
+Garments
+
+Another word:
+Bros
+Limited
+Hub -->
+    <script>
+        let rand = Math.random();
+        let first, second, third;
+        //0--0.33--0.66--1 the three rang that can be used to generate bussiness name
+
+        if (rand < 0.33) {
+            first = "Carzy";
+        } else if (rand < 0.66 && rand >= 0.33) {
+            first = "Amazing";
+        } else {
+            first = "Fire";
+        }
+
+        //lets generate the second word
+        let rand1 = Math.random();
+        if (rand1 < 0.33) {
+            second = "Engine";
+        } else if (rand1 < 0.66 && rand1 >= 0.33) {
+            second = "Foods";
+        } else {
+            second = "Garments";
+        }
+
+        //let generate third word
+        let rand2 = Math.random();
+        if (rand2 < 0.33) {
+            third = "Bros";
+        } else if (rand2 < 0.66 && rand2 >= 0.33) {
+            third = "Limited";
+        } else {
+            third = "Hub";
+        }
+
+        console.log(`${first}${second}${third}`);
+    </script>
+</body>
+
+</html>
