@@ -21,33 +21,34 @@ let a =  [11, 22, 33, 44, 55]
 
 console.log(a.toString())      // tostring()
 
-console.log(a.join("-"))       //join("-")
+console.log(a.join("-"))       //join("-") it just join what ever to give in between the array like this {1-2-3-4-4} .
 
-console.log(a.pop())     //pop()--remove the last element form the original array the return the value  //[1,2,3,4]
+console.log(a.pop())     //pop()--remove the last element form the original array the return the value  //[1,2,3,4].
 
 console.log(a.push(9))  //push()
 console.log(a)
 
-console.log(a.shift())  // shift()--remove the first element and return it
+console.log(a.shift())  // shift()--remove the first element and return it.
 console.log(a)
 
-console.log(a.unshift(66))  //unshift()--add a element to the beginning retuen the new lenght
+console.log(a.unshift(66))  //unshift()--add a element to the beginning retuen the new lenght.
 console.log(a)
 
-delete a[1]   // delete a[1]-- delete the element at index 1
+delete a[1]   // delete a[1]-- delete the element at index 1.  but the allocated mwmoey is not released.
 console.log(a)
 
 let b = [23,3,45,6,77]
+
 b.sort()
+console.log(b) 
+
+console.log(b.splice(1,2,24,34))   //b.splice(position,no.of element to remove,element to be added) .
 console.log(b)
 
-console.log(b.splice(1,2,24,34))   //b.splice(position,no.of element to remove,element to be added) 
-console.log(b)
-
-console.log(b.slice(1))   //b,slice()--slice out a piece from an array. It create a new array 
+console.log(b.slice(1))   //b,slice()--slice out a piece from an array. It create a new array .
 console.log(b.slice(0,3))
 
-console.log(b.reverse())  //b.reverse()--reverse the array
+console.log(b.reverse())  //b.reverse()--reverse the array.
 
 
 
