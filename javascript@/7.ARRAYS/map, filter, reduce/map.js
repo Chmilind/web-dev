@@ -56,3 +56,8 @@ const Reduce = (a, b)=>{
 
 console.log(b.reduce(Reduce))
 
+//-----Array.from--------
+
+let str = "hello"
+let arr2 = Array.from(str)
+console.log(arr2)
