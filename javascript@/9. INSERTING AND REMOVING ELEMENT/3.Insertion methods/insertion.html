@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insertion method</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">hey, you look great</div>
+    <div class="box">hey, whatsapp</div>
+  </div>
+  <script>
+    let div = document.createElement("div")
+    div.innerHTML = "I have leraing this for a while"
+    div.setAttribute("class","created");
+    document.querySelector(".container").append(div) //this will insert a div in the container at the last
+    document.querySelector(".container").prepend(div)  // this will insert a div in teh container at the first
+    document.querySelector(".container").after(div) // this will insert a div after the container
+    document.querySelector(".container").before(div) // this will insert a div before the container
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>insert adjacent html / text / ELement</title>
+</head>
+<body>
+  <h1>inserting a adjacent html</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure voluptatibus eaque nam, facilis impedit tempora cumque deleniti ipsum sunt enim labore ullam soluta eum minus. Totam error iusto maxime sint!</p>
+  <div class="container">
+    <div class="box">this are the div that are written by default</div>
+    <div class="box">this are the div that are written by default</div>
+  </div>
+
+  <script>
+    let cont = document.querySelector(".container")
+    cont.insertAdjacentHTML("afterbegin","<b> afterbegin </b>")
+    cont.insertAdjacentHTML("afterend","<b> afterend </b>")
+    cont.insertAdjacentHTML("beforebegin","<b> beforebegin </b>")
+    cont.insertAdjacentHTML("beforeend","<b> beforend </b>")
+
+    document.querySelector("p").remove()
+  </script>
+</body>
+</html>
