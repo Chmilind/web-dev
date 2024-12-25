@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classname and classlist</title>
+  <style>
+    .red{
+      color: red;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container red bg-green">
+    <div class="box">Hey i am milind</div>
+    <div class="box"> Whatsup dude</div>
+  </div>
+  <script>
+      document.querySelector('.container').classList  // these well show the classes list that are present in class container in this case are "red bg-green"
+      document.querySelector('.container').className // these will show the value inside the class attibute of the container in this case are "red bg-green"
+
+      // By using classList we can add or remove class from the element
+
+      document.querySelector('.container').classList.add('blue') // this will add the class blue to the container
+      document.querySelector('.container').classList.remove('red') // this will remove the class red from the container
+
+      // toggle method is used to add or remove the class from the element if the class is already present then it will
+      
+      document.querySelector('.container').classList.toggle('red') // these will add color red
+      document.querySelector('.container').classList.toggle('red') // these will remove.
+      document.querySelector('.container').classList.toggle('red') // these will add color 
+      document.querySelector('.container').classList.toggle('red') // these will remove 
+  </script>
+</body>
+
+</html>
