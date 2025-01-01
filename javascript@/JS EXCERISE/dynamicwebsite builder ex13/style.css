@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  margin: 20px;
+}
+
+.card {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: rgb(42, 41, 41);
+  width: 900px;
+  margin: 2px;
+  /*   */
+}
+
+.image{
+  margin: 0;
+  padding: 0;
+}
+
+.image img {
+  width: 250px;
+  padding: 9px 6px 6px 9px;
+  border-radius: 20px;
+}
+
+.text{
+  color: rgb(230, 225, 225);
+
+}
+
+.text h1{
+  padding: 15px 0px 9px 5px ;
+  font-size: 27px ;
+}
+.text p{
+  padding: 7px 11px 0px 5px ;
+}
+
+.image{
+  position: relative;
+  border-radius: 3px;
+}
+
+.image .capsula {
+  position: absolute;
+  bottom: 20px ;
+  z-index: 10;
+  right: 20px;
+  background :#242020;
+  opacity: 0.7;
+  color: white;
+  padding: 3px;
+  border-radius:3px ;
+  font-size: 14px;
+}
