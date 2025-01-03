@@ -3,9 +3,9 @@ console.log("BY FUNCTION")
 //write a script that randomly color's the box in the html code.
 
 function randomcolorbox() {  //making a function for genrating a random color 
-    const r = Math.floor(0 + Math.random() * 256)  // generating a random number between 0 and 256 for the red
+    const r = Math.ceils(0 + Math.random() * 256)  // generating a random number between 0 and 256 for the red
     const g = Math.ceil(0 + Math.random() * 256)   //generating a random number between 0 and 256 for the green .
-    const b = Math.floor(0 + Math.random() * 256)  //generating a random number between 0 and 256 for the blue.
+    const b = Math.ceil(0 + Math.random() * 256)  //generating a random number between 0 and 256 for the blue.
     return `rgb(${r},${g},${b})`   //returning the random color in rgb format.by using the templete
 
 }

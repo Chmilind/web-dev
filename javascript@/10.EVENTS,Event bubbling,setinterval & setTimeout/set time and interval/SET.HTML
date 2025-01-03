@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evenet bubbling</title>
+  <style>
+    .container {
+      background-color: rgb(238, 255, 0);
+      padding: 14px;
+      margin: 14px;
+      cursor: pointer;
+    }
+
+    .childcontainer {
+      background-color: rgb(254, 0, 0);
+      padding: 14px;
+      margin: 14px;
+      cursor: pointer;
+    }
+
+    .child {
+      background-color: rgb(255, 255, 255);
+      border: 2px solid black;
+      padding: 14px;
+      margin: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="childcontainer">
+      <div class="child">
+        I am a child
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function randomcolorbox() {
+      let r = Math.ceil(0 + Math.random() * 256)
+      let g = Math.ceil(0 + Math.random() * 256)
+      let b = Math.ceil(0 + Math.random() * 256)
+      return `rgb(${r},${g},${b})`
+    }
+
+    setInterval(() => {
+      document.querySelector(".childcontainer").style.background = randomcolorbox()
+    }, 1000);
+
+  </script>
+</body>
+
+</html>
